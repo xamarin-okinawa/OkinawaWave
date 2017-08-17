@@ -18,6 +18,13 @@ namespace OkinawaWave.ViewModels
             set { SetProperty(ref _title, value); }
         }
 
+        private string _imgTitle;
+		public string ImgTitle
+		{
+			get { return _imgTitle; }
+			set { SetProperty(ref _imgTitle, value); }
+		}
+
 
         private ObservableCollection<WaveData> _waveDatas = new ObservableCollection<WaveData>();
         public ObservableCollection<WaveData> WaveDatas
@@ -36,6 +43,9 @@ namespace OkinawaWave.ViewModels
         {
             WaveDatas = new ObservableCollection<WaveData>();
 			WaveDatas.Add(new WaveData());
+            WaveDatas.Add(new WaveData());
+            WaveDatas.Add(new WaveData());
+            WaveDatas.Add(new WaveData());
         }
 
         public void OnNavigatedFrom(NavigationParameters parameters)
@@ -52,6 +62,7 @@ namespace OkinawaWave.ViewModels
         {
             if (parameters.ContainsKey("title"))
                 Title = (string)parameters["title"] + " and Prism";
+            ImgTitle = "Images/okinawa.png";
 
             // todo:
 
