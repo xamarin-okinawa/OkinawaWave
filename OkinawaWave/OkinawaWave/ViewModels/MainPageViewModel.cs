@@ -42,10 +42,40 @@ namespace OkinawaWave.ViewModels
         public MainPageViewModel()
         {
             WaveDatas = new ObservableCollection<WaveData>();
-			WaveDatas.Add(new WaveData());
-            WaveDatas.Add(new WaveData());
-            WaveDatas.Add(new WaveData());
-            WaveDatas.Add(new WaveData());
+            WaveDatas.Add(new WaveData(){
+               Title = "真栄田岬", TweetCnt = "6", Wind="1.5"
+            });
+      			WaveDatas.Add(new WaveData()
+      			{
+      				Title = "宮城海岸",
+      				TweetCnt = "2",
+      				Wind = "2.0"
+      			});
+      			WaveDatas.Add(new WaveData()
+      			{
+      				Title = "大泊ビーチ",
+      				TweetCnt = "11",
+      				Wind = "0.5"
+      			});
+      			WaveDatas.Add(new WaveData()
+      			{
+      				Title = "ゴリラチョップ",
+      				TweetCnt = "4",
+      				Wind = "0.5"
+      			});
+      			WaveDatas.Add(new WaveData()
+      			{
+      				Title = "大度海浜岸",
+      				TweetCnt = "7",
+      				Wind = "0.5"
+      			});
+      			WaveDatas.Add(new WaveData()
+      			{
+      				Title = "備瀬崎",
+      				TweetCnt = "3",
+      				Wind = "1.0"
+      			});
+
         }
 
         public void OnNavigatedFrom(NavigationParameters parameters)

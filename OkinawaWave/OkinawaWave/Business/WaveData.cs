@@ -10,5 +10,18 @@ namespace OkinawaWave.Business
             get;
             set;
         }
+
+    		public string Wind
+    		{
+    			get;
+    			set;
+    		}
+
+    		public string TweetCnt
+    		{
+    			get;
+    			set;
+    		}
+
     }
 }

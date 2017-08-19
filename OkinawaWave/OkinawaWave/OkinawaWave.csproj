@@ -52,6 +52,8 @@
     <EmbeddedResource Include="Images\okinawamap.png" />
     <EmbeddedResource Include="Images\okinawa.png" />
     <EmbeddedResource Include="Images\twitter.png" />
+    <EmbeddedResource Include="Images\flag.png" />
+    <EmbeddedResource Include="Images\flag_on.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\MainPage.xaml">
@@ -90,6 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Images\menu_am9.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Business\" />
